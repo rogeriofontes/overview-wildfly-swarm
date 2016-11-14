@@ -188,12 +188,7 @@ sudo mongod --dbpath /data/db
 					<h2>  passo 4: rodar com o docker <a href="https://github.com/angular-fullstack/generator-angular-fullstack">angular-fullstack</a> generator.</h2>
 					<p>Criar Projeto:</p>
 					<pre>
-mkdir attendee-frontend-day
-cd attendee-frontend-day
-$ yo angular-fullstack
-					</pre>
-				</section>
-						dockerfile:
+dockerfile:
 
 FROM java:openjdk-8-jdk
 ADD target/helloworld-swarm-0.0.1-SNAPSHOT-swarm.jar /opt/helloworld-swarm.jar
@@ -205,6 +200,10 @@ $ docker build -t helloworld .
 $ docker run -d -p 8080:8080 imageid
 
 $ docker logs -f containerid
+					</pre>
+				</section>
+				
+						
 
 
 					</pre>
