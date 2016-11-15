@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>ENSINANDO A SER MAU COM MEAN STACK - UaiJUG FrontEnd Day</title>
+		<title>Wildfly Swarm! Rocks.</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -41,8 +41,8 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section data-background-color="#ffffff">
-				<h5>Como transformar um projeto JEE em um micro-serviço, utilizando o wildfly-swarm</h5>
-					<img data-src="img/logo-swarm.png">
+				<h5>Como transformar um projeto JEE em um micro-serviço com o wildfly-swarm.</h5>
+					<img data-src="img/swarm_logo_final.png">
 					<p>
 						<small>Palestrante: <a href="http://rogeriofontes.inf.br" target="_blank">Rogério Fontes</a> / <a href="http://twitter.com/rogeriofontes" target="_blank">@rogeriofontes</a></small>
 					</p>
@@ -50,7 +50,7 @@
 
 				<section data-background-color="#ffffff">
 					<h5>Sobre o palestrante:</h5>
-					<p>Apaixonado em maneiras e formas ágeis de criar código fonte. Programando sempre tomando um bom café e escutando um belo e pesado rock`n roll. Trabalha a mais de 10 anos com java e linux, passando por android, python, php e agora com o coração no angular.js e node.js. Professor universitário de redes de computadores, java e dispositivos móveis. jugleader e co-fundador do uaijug (grupo de usuários do triângulo mineiro) e do triângulo hackerspace. além disso aventurando como empreendedor e arquiteto de software do comdominiodigital, projeto da digitos.</p>
+					<p>Apaixonado em maneiras e formas ágeis de criar código fonte. Programando sempre tomando um bom café e escutando um belo e pesado rock`n roll. Trabalha a mais de 10 anos com java e linux, passando por android, python, php e agora com o coração no angular.js e node.js. Professor universitário de redes de computadores, Java, Analise de Sistemas e dispositivos móveis. Jugleader e co-fundador do uaijug (grupo de usuários do triângulo mineiro) e tembém co-fundador do triângulo hackerspace. Além disso aventurando como Empreendedor e trabalha como Arquiteto de software do comdominiodigital, projeto da digitos.</p>
 				</section>
 
 				<section data-background-color="#ffffff">
@@ -59,195 +59,193 @@
 				</section>
 
 				<section data-background-color="#ffffff">
-					<img data-src="img/mean-diagram-3.png">
+					<h5>O que podemos fazer?</h5>
+					<p>Com o WildFly Swarm, podemos empacotar nossa aplicação JEE e rodá-la de forma simples e descompicada, sem precisar configurar um servidor de aplicação completo e ainda podemos rodar rapidamente nossa aplicação. Com isso podemos criar um micro-serviço de forma rápida, performatica e eficaz usando nossa aplicações JEE</p>
+					<!--img data-src="img/NSD_Node.js-Stack.png"-->
+				</section>
+
+				 <section data-background-color="#ffffff">
+					<h5>O que é wildfly?</h5>
+					<p>Wildfly é o servidor de aplicação JEE Open Source da comunidade JBoss.
+Um servidor de aplicação deve permitir a implantação("deploy") de aplicações que sigam os padrões JEE.
+O Wildfly tem uma arquitetura modular e vem com ótimas ferramentas de gerenciamento, recursos para criação de clusters(alta disponibilidade).</p>
+					<!--img data-src="img/NSD_Node.js-Stack.png"-->
 				</section>
 
 				<section data-background-color="#ffffff">
-					<h2>Descrição</h2>
-					<p>Como o WildFly Swarm, podemos empacotar nossa aplicação JEE e rodá-la de forma simples e descompicada, sem precisar configurar um servidor de aplicação completo e ainda podemos rodar rapidamente nossa aplicação. Com isso podemos micro-serviço de forma rápida, performatica e eficaz usando nossa aplicações JEE</p>
-					<!--img data-src="img/NSD_Node.js-Stack.png"-->
-				</section>
-				
-				 <section data-background-color="#ffffff">
-					<h2>O que é wildfly?</h2>
-					<p>Como o WildFly Swarm, podemos empacotar nossa aplicação JEE e rodá-la de forma simples e descompicada, sem precisar configurar um servidor de aplicação completo e ainda podemos rodar rapidamente nossa aplicação. Com isso podemos micro-serviço de forma rápida, performatica e eficaz usando nossa aplicações JEE</p>
-					<!--img data-src="img/NSD_Node.js-Stack.png"-->
-				</section>
-				
-				<section data-background-color="#ffffff">
 					<h2>O que é Wildfly Swarm?</h2>
-					<p>Como o WildFly Swarm, podemos empacotar nossa aplicação JEE e rodá-la de forma simples e descompicada, sem precisar configurar um servidor de aplicação completo e ainda podemos rodar rapidamente nossa aplicação. Com isso podemos micro-serviço de forma rápida, performatica e eficaz usando nossa aplicações JEE</p>
+					<p>É um projeto que pode ser usado para fornecer em únicos arquivos (jars), somente o que sua aplicação precisa do Wildfly. E empacotando o que for necessário em um uberjar o que é preciso para executar essa aplicação. </p>
 					<!--img data-src="img/NSD_Node.js-Stack.png"-->
 				</section>
-				
+
 				<section data-background-color="#ffffff">
-					<h2>Porque foi criado?</h2>
-					<p>Como o WildFly Swarm, podemos empacotar nossa aplicação JEE e rodá-la de forma simples e descompicada, sem precisar configurar um servidor de aplicação completo e ainda podemos rodar rapidamente nossa aplicação. Com isso podemos micro-serviço de forma rápida, performatica e eficaz usando nossa aplicações JEE</p>
-					<!--img data-src="img/NSD_Node.js-Stack.png"-->
+					<h5>O que é uberjar?</h5>
+					<img data-src="img/swarm-uberjar.png" height="500" width="700">
 				</section>
-				
+
+				<section data-background-color="#ffffff">
+					<h2>O que oferece?</h2>
+					<p>WildFly Swarm, oferece uma abordagem inovadora para empacotar e rodar Aplicações Java EE empacotando apenas o suficiente  do servidor para rodar sua aplicação em um jar.  Ele também é compativel com MicroProfile. <br /> <small>(Tradução livre)</small></p>
+					<a href="http://wildfly-swarm.io/">http://wildfly-swarm.io/</a>
+				</section>
+
+				<section data-background-color="#000000">
+					<h5>O que é MicroProfile?</h5>
+					<img data-src="img/microprofile.png" height="300" width="800"><br />
+					<a href="http://microprofile.io/">http://microprofile.io/</a><br />
+					<a href="http://developers.redhat.com/blog/2016/06/27/microprofile-collaborating-to-bring-microservices-to-enterprise-java/">http://developers.redhat.com/blog/2016/06/27/microprofile-collaborating-to-bring-microservices-to-enterprise-java/</a>
+				</section>
+
 				<!-- Example of nested vertical slides -->
 				<section data-background-color="#ffffff">
 					<section>
-						<h2>Olá Mundo, usando RESTful com Wildfly Swarm.</h2>
+						<h5>Olá Mundo, usando RESTful com Wildfly Swarm.</h5>
+						<img data-src="img/hello_world.gif" height="200" width="600"><br />
+					</section>
+					<section>
+						<h2>Gerando a Aplicação?</h2>
+						<img data-src="img/swarm-generator.png" height="300" width="400"><br />
 						<p style="font-size:22px;">
-						   MongoDB, Banco de dados orientado a documentos<br/>
-						   Express.js, Framework de desenvolvimento web que roda sobre o Node.js<br/>
-						   Angular.js, Framework MVC para JavaScript<br/>
-     					   Node.js, Ambiente de execução JavaScript, para event-driven, server-side e aplicações em Redes.</p>
-					</section>
-					<section>
-						<h2>Porque MEAN?</h2>
-						<p>MEAN é um acronimo cunhado por Valeri Karpov, desenvolvedor do MongoDB developer. <a href="http://blog.mongodb.org/post/49262866911/the-mean-stack-mongodb-expressjs-angularjs-and" target="_blank">[Saiba mais]</p>
-					</section>
-					<section>
-						<h2>MongoDB</h2>
-						<img data-src="img/logo-mongodb-tagline.png" width="350" height="150">
-						<p style="font-size:30px;">Banco de dados NoSQL (Not Only SQL), orientado a documentos, ou seja, guarda os dados em uma estrutura de Documento em um formato baseado em JSON(JavaScript Object Notation).</p>
-						<br>
-						<a href="#/2">
-						</a>
-					</section>
-					<section>
-						<h2>ExpressJs</h2>
-						<img data-src="img/280px-Expressjs.png" width="350" height="150">
-						<p style="font-size:30px;">Framework web, leve e flexível, para NodeJs. É responsável pelo server side, criando e gerenciando rotas e REST Endpoints, que serão consumidos pela parte no lado do cliente, usando o AngularJS. É o back-end da aplicação, adicionando middlewares ao servidor Node, tudo usando JavaScript.</p>
-						<br>
-						<a href="#/2">
-						</a>
-					</section>
-					<section>
-						<h2>AngularJS</h2>
-						<img data-src="img/angularjs-logo.png" width="350" height="150">
-						<p style="font-size:30px;">É o Site propriamente didos. É um framework front-end MVC que manipula o DOM(Document Object Model), utilizando JavaScript, HTML e CSS na criação de Single Page Applications(SPA).  Alguns principais recursos do Angular são as injeções de dependências, possibilidade da criação de componentes(diretivas),  dentre várias facilidades e agilidades para o programador.</p>
-						<br>
-						<a href="#/2">
-						</a>
-					</section>
-					<section>
-						<h2>NodeJs</h2>
-						<img data-src="img/nodejs.png" width="350" height="150">
-						<p style="font-size:30px;">Ambiente de execução JavaScript, criado a partir do ambiente JavaScript que roda no Google Chrome (chamado de V8). Feito para construir aplicações escaláveis de forma assíncrona, várias conexões são realizadas de forma simultânea. Para gerenciar essas funções assíncronas, é utilizado um loop de eventos, e uma única thread. É open source, e com uma vasta diversidade de bibliotecas criadas pela comunidade podendo ser utilizado a partir de seu gerenciador  de pacotes (npm), Node.js. </p>
-						<br>
-						<a href="#/2">
-						</a>
-					</section>
-				</section>
-				
-				<section data-background-color="#ffffff">
-					<section>
-						<h2>WildFly Swarm x Spring boot</h2>
-						<p style="font-size:22px;">
-						
-						--> http://ksoong.org/wildfly-swarm-spring-boot
+							<ul>
+								<li>Entre no site: <a href="http://wildfly-swarm.io/generator/">http://wildfly-swarm.io/generator/</a></li>
+								<li>Selecione as dependencias</li>
+								<li>Gere o projeto</li>
+								<li>Importe no Eclipse como projeto maven</li>
+							</ul>
 						</p>
 					</section>
 					<section>
-						<h2>Porque MEAN?</h2>
-						<p>MEAN é um acronimo cunhado por Valeri Karpov, desenvolvedor do MongoDB developer. <a href="http://blog.mongodb.org/post/49262866911/the-mean-stack-mongodb-expressjs-angularjs-and" target="_blank">[Saiba mais]</p>
+						<h2>Estrutura do Projeto</h2>
+						<img data-src="img/estrutura-projeto.png" width="500" height="450">
+						<p style="font-size:30px;">Para rodar</p>
+						<br>
+						<a href="#/2">
+						</a>
 					</section>
-			
-				</section>
+					<section>
+						<h2>Plugin Wildfly-Swarm</h2>
+							<pre><code>
+<build>
+	<finalName>demo</finalName>
+	<plugins>
+	 <plugin>
+		 <groupId>org.wildfly.swarm</groupId>
+		 <artifactId>wildfly-swarm-plugin</artifactId>
+		 <version>${version.wildfly.swarm}</version>
+		 <executions>
+			<execution>
+			 <goals>
+				<goal>package</goal>
+			 </goals>
+		 </execution>
+	  </executions>
+  </plugin>
+</plugins>
+								</build></code>
+							</pre>
+						<br>
+						<a href="#/2">
+						</a>
+					</section>
+					<section>
+						<h2>Dependencias Wildfly-Swarm</h2>
+							<pre><code>
+<dependencies>
+	 <!-- Java EE 7 dependency -->
+	 <dependency>
+		 <groupId>javax</groupId>
+		 <artifactId>javaee-api</artifactId>
+		 <version>7.0</version>
+		 <scope>provided</scope>
+	 </dependency>
+	 <!-- WildFly Swarm Fractions -->
+	 <dependency>
+		 <groupId>org.wildfly.swarm</groupId>
+		 <artifactId>cdi-jaxrsapi</artifactId>
+	 </dependency>
+ </dependencies>
+							</code></pre>
+						<a href="#/2">
+						</a>
+					</section>
+					<section>
+						<h2>Endpoint Simples</h2>
+						<pre><code>
+package helloday.helloday.rest;
 
-				<section data-background-color="#ffffff">
-					<h2>DEmo</h2>
-					<img data-src="img/mean-yeoman.png">
-				</section>
-    
-    
-    
-  
+import javax.ws.rs.Path;
+import javax.ws.rs.core.Response;
+import javax.ws.rs.GET;
+import javax.ws.rs.Produces;
 
-					<section data-background-color="#ffffff">
-					<h2>passo 1: http://wildfly-swarm.io/generator/</h2>
-					<pre>
-mongo_start.sh 
+@Path("/hello")
+public class HelloWorldEndpoint {
 
-#!/bin/bash
+	@GET
+	@Produces("text/plain")
+	public Response doGet() {
+		return Response.ok("Hello from WildFly Swarm!").build();
+	}
+}
+						</code></pre>
+						<a href="#/2">
+						</a>
+					</section>
+					<section>
+						<h2>Como Rodar o Projeto</h2>
+						<p style="font-size:30px;">Para rodar pelo maven:</p>
+						<pre>mvn clean package wildfly-swarm:run</pre>
+						<p style="font-size:30px;">Para rodar fazendo build da aplicação:</p>
+						<pre>mvn clean package<br />java -jar target/yourpackage-swarm.jar</pre>
 
-sudo mongod --dbpath /data/db
-
-					</pre>
-					<p> Para instalar o mongoDB: <a href="https://rogeriofontespsi.wordpress.com/2015/03/26/instalacao-do-mongodb/" target="_blank">instalacao-do-mongodb</a>
-				</section>
-
-				<section data-background-color="#ffffff">
-					<h2>passo 2: rodar a applicacao com jar <a href="https://github.com/angular-fullstack/generator-angular-fullstack">angular-fullstack</a> generator.</h2>
-					<p>Instalar o gerador full stack e suas dependencias:</p>
-					<pre>$ npm install -g yo grunt-cli gulp-cli bower generator-angular-fullstack</pre>
-				</section>
-
-				<section data-background-color="#ffffff">
-					<h2>passo 3: melhora a app com jpa <a href="https://github.com/angular-fullstack/generator-angular-fullstack">angular-fullstack</a> generator.</h2>
-					<p>Instalar omente o gerador full stack:</p>
-					<pre>$ npm install -g generator-angular-fullstack
-				</pre>
-				</section>
-
-				<section data-background-color="#ffffff">
-					<h2>  passo 4: rodar com o docker <a href="https://github.com/angular-fullstack/generator-angular-fullstack">angular-fullstack</a> generator.</h2>
-					<p>Criar Projeto:</p>
-					<pre>
-dockerfile:
-
-FROM java:openjdk-8-jdk
-ADD target/helloworld-swarm-0.0.1-SNAPSHOT-swarm.jar /opt/helloworld-swarm.jar
-EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "/opt/helloworld-swarm.jar"]
-
-$ docker build -t helloworld .
-
-$ docker run -d -p 8080:8080 imageid
-
-$ docker logs -f containerid
-					</pre>
-				</section>
-				
-						
-
-
-					</pre>
-				</section>
-
-				
-				
-				<section data-background-color="#ffffff">
-					<h2>Estrutura do projeto</h2>
-					<p>
+						<a href="#/2">
+						</a>
+					</section>
+					<section>
+						<h2>Sou fã do docker, e ai?</h2>
+						<p style="font-size:30px;">Para rodar com o docker:</p>
+						<p style="font-size:30px;"><small>Para rodar com o docker crie um arquivo chamado helloword, com a seginte estrutura:</small></p>
 						<pre>
-├── client
-│   ├── app               - All of our app specific components go in here
-│   ├── assets            - Custom assets: fonts, images, etc… 
-│   ├── components        - Our reusable components, non-specific to to our app
-│ 
-├── e2e                   - Our protractor end to end tests
-│
-└── server
-	├── api               - Our apps server api
-	├── auth              - For handling authentication with different auth strategies
-	├── components        - Our reusable or app-wide components
-	├── config            - Where we do the bulk of our apps configuration
-	│   └── local.env.js  - Keep our environment variables out of source control.
-	│   └── environment   - Configuration specific to the environment the server is being run in
-	└── views             - Server rendered views
-						</pre>
-					</p>
+FROM java:openjdk-8-jdk
+ADD target/helloworld-swarm-0.0.1-SNAPSHOT-swarm.jar
+/opt/helloworld-swarm.jar
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "/opt/helloworld-swarm.jar"]</pre>
+						<p style="font-size:30px;">Para rodar fazendo com o docker:</p>
+						<pre>docker build -t helloworld .<br />docker run -d -p 8080:8080 [id da imagem]</br>docker logs -f [id da imagem]</pre>
+
+						<a href="#/2">
+						</a>
+					</section>
+					<section>
+						<h2>Rodando no Navegador</h2>
+						<img data-src="img/run.png">
+						<a href="#/2">
+						</a>
+					</section>
 				</section>
 
-				<section data-background-color="#ffffff">
-					<h2>Para começar a estudar o Swarm:</h2>
-					<img data-src="img/mean-stack-end.png">
-					<h5>Referências:</h5>
-					<p style="font-size:18px;text-align:left;">
-						http://wildfly-swarm.io/tutorial/<br />
-						http://wildfly-swarm.io/resources/<br />
-						https://github.com/wildfly-swarm/wildfly-swarm-examples<br />
 
-					</p>
-				</section>
-		
+			<section data-background-color="#ffffff">
+				<h2>Wildfly Swarm x Spring boot</h2>
+				<p>
+					O que falar sobre a diferenças?<br />
+					<ul>
+					<li>Diferenca 1</li>
+					<li>Diferenca 2</li>
+					<li>Diferenca 3</li>
+					<li>Diferenca 4</li>
+					</ul>
+				</p>
+				<a href="http://ksoong.org/wildfly-swarm-spring-boot">Leia mais, nesse artigo</a>
+				<!--img data-src="img/NSD_Node.js-Stack.png"-->
+			</section>
+
+			<section data-background-color="#ffffff">
+				<h5>Demo</h5>
+				<img data-src="img/demo.jpg">
+			</section>
 			</div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
