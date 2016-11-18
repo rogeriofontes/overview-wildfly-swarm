@@ -89,9 +89,9 @@ O Wildfly tem uma arquitetura modular e vem com ótimas ferramentas de gerenciam
 					<a href="http://wildfly-swarm.io/">http://wildfly-swarm.io/</a>
 				</section>
 
-				<section data-background-color="#000000">
+				<section data-background-color="#ffffff">
 					<h5>O que é MicroProfile?</h5>
-					<img data-src="img/microprofile.png" height="300" width="800"><br />
+					<img style="background-color: #000000" data-src="img/microprofile.png" height="150" width="800"><br />
 					<a href="http://microprofile.io/">http://microprofile.io/</a><br />
 					<a href="http://developers.redhat.com/blog/2016/06/27/microprofile-collaborating-to-bring-microservices-to-enterprise-java/">http://developers.redhat.com/blog/2016/06/27/microprofile-collaborating-to-bring-microservices-to-enterprise-java/</a>
 				</section>
@@ -227,17 +227,67 @@ ENTRYPOINT ["java", "-jar", "/opt/helloworld-swarm.jar"]</pre>
 
 
 			<section data-background-color="#ffffff">
-				<h2>Wildfly Swarm x Spring boot</h2>
-				<p>
-					O que falar sobre a diferenças?<br />
-					<ul>
-					<li>Diferenca 1</li>
-					<li>Diferenca 2</li>
-					<li>Diferenca 3</li>
-					<li>Diferenca 4</li>
-					</ul>
-				</p>
-				<a href="http://ksoong.org/wildfly-swarm-spring-boot">Leia mais, nesse artigo</a>
+				 	<section>
+						<h2>Wildfly Swarm x Spring boot</h2>
+						<p><small>O que falar sobre a diferenças?<br />
+						<a href="http://ksoong.org/wildfly-swarm-spring-boot" target="_blank">Leia mais, nesse artigo</a></small></p>
+						<a href="#/2">
+						</a>
+					</section>
+					<section>
+						<h2>Estrutura da aplicação é bem semelhante</h2>
+						<img data-src="img/run.png">
+						<a href="#/2">
+						</a>
+					</section>
+					<section>
+						<h2>o build e o deploy é semelhante</h2>
+						<p>Para fazer build rodar um Hello World no wildfly Swarm com RESTful web service:
+<pre><code>
+$ cd wildfly-swarm/
+$ mvn clean install
+$ java -jar target/gs-rest-service-swarm.jar
+</pre></code>
+</p>
+<p>Para fazer build rodar um Hello World no spring boot com RESTful web service:
+<pre><code>
+$ cd spring-boot
+$ mvn clean install
+$ java -jar target/gs-rest-service.jar
+</pre></code></p>
+						<a href="#/2">
+						</a>
+					</section>
+					<section>
+						<h5>Para rodar os dois framework, por default, não precisam passar o contexto:</h5>
+						<p>
+							http://localhost:8080/greeting <br /> http://localhost:8080/greeting?name=User
+						</p>
+						<a href="#/2">
+						</a>
+					</section>
+					<section>
+						<h5>Jar final no swarm é maior e mais complexo que no spring boot</h5>
+						<p>
+							<ul style="font-size: 30px">
+							  <li><medium>WildFly Swarm é 3 vezes que o Spring boot em tamanho</medium></li>
+							  <li>WildFly Swarm é 5 vezes que o Spring boot em número de jars</li>
+							  <li>WildFly Swarm é 5 vezes que o Spring boot em número de arquivos</li>
+							  <li>WildFly Swarm é 30 vezes que o Spring boot em número de directorios</li>
+							</ul>
+						</p>
+						<a href="#/2">
+						</a>
+					</section>
+					<section>
+						<h5>O que isso se deve?</h5>
+						<p style="font-size: 30px">Isso se deve por causa do class loading do framework, WildFly Swarm usa JBoss Modules que é mais modular e dinamico. O Spring Boot usa tradicional o mecanismo de class loading, o flat class loading.
+<br /><br />
+Por que o WildFly Swarm e mais complexo em sua arquitetura?
+O classe loading dos modulos do Jboss são mais complexos que o tradicional flat class loading framework, a execução da camada de aplicação. Além disso, WildFly é mais complexo quem tomcat/jetty/undertow.</p>
+						<a href="#/2">
+						</a>
+					</section>
 				<!--img data-src="img/NSD_Node.js-Stack.png"-->
 			</section>
 
